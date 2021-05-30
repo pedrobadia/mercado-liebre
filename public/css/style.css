@@ -1,7 +1,32 @@
 body{
     font-size: 16px;
+    font-family: Roboto;
+    margin: 0;
+}
+h2{
+    font-size: 24px;
 }
 
 .hero{
     background-color: #EAC926;
+    padding:25px;
+    color:#666666;
+}
+
+.burger-menu{
+    background-color: #03264C;
+    color:#ffffff;
+    width:25px;
+    height: 25px;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 6px;
+}
+
+.price{
+    font-size: 18px;
+}
+
+.img--producto{
+    height: 600px;
 }
