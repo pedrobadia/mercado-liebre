@@ -1,32 +1,82 @@
+
+/*
+Colors: Amarillo: #EAC926; Azul: #03264C; Celeste: #1259c3; Gris oscuro: #666; Gris claro: #ebebeb; Verde: #39b54a;
+Font size: Cuerpos de texto: 12px | Titulares: 24px | Precios: 18px | Descuentos: 16px | Descripciones: 16px
+*/
+
 body{
-    font-size: 16px;
-    font-family: Roboto;
+    font-family: Roboto, serif;
+    font-size: 12px;
     margin: 0;
 }
-h2{
-    font-size: 24px;
+
+ul.menu{
+    list-style-type: none;
+    padding: 0px;
+}
+
+input[type="submit"] {
+    font-family: FontAwesome;
 }
 
 .hero{
     background-color: #EAC926;
     padding:25px;
     color:#666666;
+    width:100%;
+    height:100%;
 }
 
-.burger-menu{
-    background-color: #03264C;
+.hero-menu{
+    color: #666666;
+    text-decoration: none;
+    padding-right: 8px;
+
+}
+
+.hero__burger-menu{
+    background-color: #1259c3;
     color:#ffffff;
     width:25px;
     height: 25px;
     padding: 10px;
-    font-size: 25px;
+    font-size: 2em;
     border-radius: 6px;
 }
 
-.price{
+.banner-home{
+    width: 100%;
+    height: auto;
+}
+
+h2.title-home {
+    font-size: 24px;
+}
+
+.price {
     font-size: 18px;
 }
 
-.img--producto{
-    height: 600px;
+.discounts {
+    font-size: 16px;
+}
+
+.description {
+    font-size: 16px;
+}
+
+.img-producto{
+    max-width: 420px;
+    height: auto;
+
+}
+
+.footer__icon {
+    color:#1259c3;
+    font-size: 2em;
+    padding: 10px;
+}
+.footer-widget{
+    text-align: center;
+    color: #666666;
 }
