@@ -9,14 +9,19 @@
     <link href="/css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-        
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
 </head>
 <body>
     <header class="hero">
             <div>
                 <img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" style="width: 250px;">
-                <input type="text" placeholder="Busacar productos">
-                <input type="submit" class="search" value="&#xf1c0;" />
+                    <div>
+                        <form action="home.html" method="POST">
+                            <input type="search" placeholder="Busacar productos">
+                            <button class="hero-search__submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                
             </div>
             <p><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
             <nav>
@@ -31,8 +36,8 @@
                     <li><a href="#"  class="hero-menu">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
                     <li><a href="#"  class="hero-menu">Mis Compras</a><i class="fas fa-shopping-basket"></i></li>
                 </ul>
-                <div class="hero__burger-menu"><i class="fas fa-bars"></i></div>
             </nav>
+            <div class="hero__burger-menu"><i class="fas fa-bars"></i></div>
     </header>
     <main>
         <section>
