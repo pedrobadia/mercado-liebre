@@ -7,7 +7,9 @@ Font size: Cuerpos de texto: 12px | Titulares: 24px | Precios: 18px | Descuentos
 body{
     font-family: Roboto, serif;
     font-size: 12px;
+    color:#666666;
     margin: 0;
+    background-color: #ebebeb;
 }
 
 input:focus {
@@ -16,9 +18,10 @@ input:focus {
 
 .hero{
     background-color: #EAC926;
-    padding:25px;
-    color:#666666;
     width:100%;
+}
+.hero-wrapper {
+    display: flex;
 }
 
 .hero-menu{
@@ -44,14 +47,19 @@ ul.menu{
     color:#ffffff;
     width:25px;
     height: 25px;
-    padding: 10px;
+    padding: 5px;
     font-size: 2em;
     border-radius: 6px;
 }
 
 .banner-home{
+    display: block;
+    margin-bottom: 50px;
+}
+.banner-home img{
     width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 h2.title-home {
