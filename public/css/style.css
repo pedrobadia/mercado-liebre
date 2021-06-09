@@ -22,6 +22,11 @@ h4{
     margin: 0;
 }
 
+footer{
+    background-color: #ffffff;
+    padding-top: 20px;
+}
+
 input:focus {
     outline: none;
 }
@@ -47,6 +52,23 @@ li i {
     max-width: 1100px;
 }
 
+.logo{
+    width: 250px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1100px) {
+    .container{
+        padding: 0 20px;
+    }
+    .hero-wrapper {
+        padding: 20px !important;
+    }
+    .hero-wrapper-menu {
+        padding: 20px !important;
+    }
+}
+
 .hero{
     background-color: #EAC926;
 }
@@ -60,6 +82,26 @@ li i {
 	align-content: center;
     padding: 20px 0;
 }
+
+.hero-wrapper-menu {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+    padding: 20px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .product{
+        width:48% !important;
+    }
+    footer{
+        padding: 20px 40px;
+    }
+}
+
 
 .hero-search__submit{
     padding: 1px 2px 1px 2px;
@@ -86,12 +128,35 @@ li i {
     .hero{
         padding-bottom: 20px;
     }
+    .hero-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        padding: 20px 0;
+    }
+    .logo{
+        width: 80%;
+        padding-bottom: 20px;
+    }
+    .hero-search{
+        width: 100%;
+    }
+    .hero-wrapper-menu{
+        display: none;
+    }
     .hero__burger-menu{
         display: flex;
         justify-content: center;
         align-items: center;
     }
-  }
+    .product{
+        width:100% !important;
+    }
+    footer{
+        padding: 20px 40px;
+    }
+}
 
 .banner-home{
     display: block;
@@ -108,11 +173,11 @@ h2.title-home {
 }
 
 #ultimas{
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 #ofertas{
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .products-last-view{
@@ -127,21 +192,16 @@ h2.title-home {
 .product{
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 255px;
+    width: 24%;
     display: flex;
-	flex-direction: column;
+	flex-direction: column; 
+    margin-bottom: 40px;   
+}
 
-    
-}
-.product-divider{
-    width: 100%;
-   
-}
 .product-price{
     display: flex;
     align-items: center;
     border-top: 1px solid #ebebeb;
-    width: 100%;
     position: relative;
 }
 
@@ -162,13 +222,11 @@ h2.title-home {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .img-product{
     float: center;
     object-fit: cover;
-
 }
 .price {
     font-size: 18px;
@@ -185,7 +243,6 @@ h2.title-home {
     font-size: 16px;
 }
 
-
 .footer__icon {
     color:#1259c3;
     font-size: 2em;
@@ -194,4 +251,14 @@ h2.title-home {
 .footer-widget{
     text-align: center;
     color: #666666;
+    padding-bottom: 15px;
+}
+
+.footer-widget p{
+    margin: 0px;
+    line-height: 18px;
+}
+
+.copyright{
+    text-align: center;
 }
