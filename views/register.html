@@ -39,24 +39,45 @@
             <div class="hero__burger-menu"><i class="fas fa-bars"></i></div>
     </header>
     <main>
-        <section class="register">
+        <section class="register sm-container">
             <form action="/home.html" method="POST">
-                <input type="text">
-                <input type="text">
-                <input type="fecha">
-                <input type="text">
-                <input type="email">
-                <label for="terminos">Electro</label>
-                <input type="checkbox" name="cat-interes" value="Electro">
-                <input type="checkbox" name="cat-interes" value="Moda">
-                <input type="checkbox" name="cat-interes" value="Hogar">
-                <input type="checkbox" name="cat-interes" value="Juguetería">
-                <input type="checkbox" name="cat-interes" value="Vida sana">
+                <div></div><input type="text" name="full-name" placeholder="Nombre y apellido">
+
+                <input type="text" name="user-name" placeholder="Nombre de usuario">
+
+                <input type="email" name="email" placeholder="E-mail">
+                
+                <p>Fecha de nacimiento</p>
+                <input type="date" name="birth-date" placeholder="Nombre de usuario">
+                <input type="text" name="adress" placeholder="Nombre de usuario">
+
+                <p>Perfil del usuario</p>
+                <label for="comprar">Comprar</label>
+                <input type="radio" name="profile" value="Comprar" id="comprar">
+                <label for="vender">Vender</label>
+                <input type="radio" name="profile" value="Vender" id="vender">
+                
+                <p>Intereses</p>
+                <label for="electro">Electro</label>
+                <input type="checkbox" name="cat-interest" value="Electro" id="electro">
+
+                <label for="moda">Moda</label>
+                <input type="checkbox" name="cat-interest" value="Moda" id="moda">
+
+                <label for="hogar">Hogar</label>
+                <input type="checkbox" name="cat-interest" value="Hogar" id="hogar">
+
+                <label for="jugueteria">Juguetería</label>
+                <input type="checkbox" name="cat-interest" value="Juguetería" id="jugueteria">
+
+                <label for="vida-sana">Vida sana</label>
+                <input type="checkbox" name="cat-interest" value="Vida sana" id="vida-sana">
+
                 <input type="file">
                 <input type="password">
                 <input type="password">
-                <button></button>
-                <button></button>
+                <button type="reset">Cancelar</button>
+                <button type="submit">Enviar</button>
             </form>
         </section>
     </main>
