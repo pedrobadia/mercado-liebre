@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro - Mercado Liebre</title>
+    <title>Mercado Liebre</title>
     <link href="/css/normalize.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -13,33 +13,52 @@
 </head>
 <body>
     <header class="hero">
-            <div>
-                <img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" style="width: 250px;">
-                    <div>
-                        <form action="" method="POST">
-                            <input type="search" placeholder="Busacar productos">
-                            <button class="hero-search__submit"><i class="fa fa-search"></i></button>
-                        </form>
-                    </div>
-                
+            <div class="hero-wrapper container">
+                <a href="/"><img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" class="logo"></a>
+                <div class="hero-search">
+                    <form action="home.html" method="POST">
+                        <input type="search" placeholder="Busacar productos, marcas" class="hero-search-imput">
+                        <button class="hero-search__submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <p><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
             </div>
-            <p><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
-            <nav>
+            <nav class="hero-wrapper-menu container">
                 <ul class="menu">
-                    <li><a href="#" class="hero-menu">Ofertas</a></li>
-                    <li><a href="#" class="hero-menu">Tiendas Oficiales</a></li>
-                    <li><a href="#" class="hero-menu">Vender</a></li>
-                    <li><a href="#" class="hero-menu">Ayuda</a></li>
+                    <li><a href="#" class="hero-menu left">Ofertas</a></li>
+                    <li><a href="#" class="hero-menu left">Tiendas Oficiales</a></li>
+                    <li><a href="#" class="hero-menu left">Vender</a></li>
+                    <li><a href="#" class="hero-menu left">Ayuda</a></li>
                 </ul>
                 <ul class="menu">
-                    <li><a href="#"  class="hero-menu">Creá tu cuenta</a></i><i class="fas fa-id-card"></i></li>
-                    <li><a href="#"  class="hero-menu">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
-                    <li><a href="#"  class="hero-menu">Mis Compras</a><i class="fas fa-shopping-basket"></i></li>
+                    <li><a href="/register.html"  class="hero-menu right">Creá tu cuenta</a><i class="fas fa-id-card"></i></li>
+                    <li><a href="#"  class="hero-menu right">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
+                    <li><a href="#"  class="hero-menu right">Mis Compras</a> <i class="fas fa-shopping-basket"></i></li>
                 </ul>
             </nav>
             <div class="hero__burger-menu"><i class="fas fa-bars"></i></div>
     </header>
     <main>
+        <section class="register">
+            <form action="/home.html" method="POST">
+                <input type="text">
+                <input type="text">
+                <input type="fecha">
+                <input type="text">
+                <input type="email">
+                <label for="terminos">Electro</label>
+                <input type="checkbox" name="cat-interes" value="Electro">
+                <input type="checkbox" name="cat-interes" value="Moda">
+                <input type="checkbox" name="cat-interes" value="Hogar">
+                <input type="checkbox" name="cat-interes" value="Juguetería">
+                <input type="checkbox" name="cat-interes" value="Vida sana">
+                <input type="file">
+                <input type="password">
+                <input type="password">
+                <button></button>
+                <button></button>
+            </form>
+        </section>
     </main>
     <footer>
         <div class="footer-widget">
@@ -60,11 +79,10 @@
             <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
                 porque estás siempre protegida.</p>
         </div>
-        <div>
-            <p> <strong>Copyright © 1999-2020 MercadoLiebre S.R.L.</strong></p>
+        <div class="copyright">
+            <p><strong>Copyright © 1999-2020 MercadoLiebre S.R.L.</strong></p>
         </div>
         
-    </footer>
-    
+    </footer>   
 </body>
 </html>
