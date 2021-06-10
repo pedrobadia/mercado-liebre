@@ -31,6 +31,20 @@ input:focus {
     outline: none;
 }
 
+.container{
+    margin: auto;
+    max-width: 1100px;
+}
+.sm-container{
+    margin: auto;
+    max-width: 960px;
+}
+
+.logo{
+    width: 250px;
+    text-decoration: none;
+}
+
 ul.menu{
     list-style-type: none;
     display: flex;
@@ -45,20 +59,6 @@ ul.menu .right{
 }
 li i {
     padding-left: 5px;
-}
-
-.container{
-    margin: auto;
-    max-width: 1100px;
-}
-.sm-container{
-    margin: auto;
-    max-width: 940px;
-}
-
-.logo{
-    width: 250px;
-    text-decoration: none;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -120,6 +120,7 @@ li i {
 .hero-search-imput:focus{
     color: #666666;
 }
+
 .hero-search__submit{
     margin: 0px;
     padding: 10px 4px;
@@ -183,7 +184,7 @@ li i {
 
 .banner-home{
     display: block;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 .banner-home img{
     width: 100%;
@@ -264,6 +265,10 @@ h2.title-home {
 
 .description {
     font-size: 16px;
+}
+
+.register {
+    padding: 60px 0 40px 0;
 }
 
 .footer__icon {
