@@ -27,6 +27,12 @@ footer {
     padding-top: 20px;
 }
 
+input {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
 input:focus {
     outline: none;
 }
