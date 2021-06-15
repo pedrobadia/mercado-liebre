@@ -98,7 +98,7 @@ ul.menu .right {
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: flex-start;
-
+	align-items: center;
 }
 .hero-search {
     margin: 0px;
