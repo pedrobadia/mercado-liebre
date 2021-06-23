@@ -174,7 +174,6 @@ h2.title-home {
     background-color: #ffffff;
     width: 23%;
     display: flex;
-
 	flex-wrap: wrap;
 	justify-content: space-between;
     margin-bottom: 28px;
@@ -187,7 +186,7 @@ h2.title-home {
     height: 100%;
 }
 
-.product-price {
+.productv-price {
     display: flex;
     align-items: center;
     border-top: 1px solid #ebebeb;
