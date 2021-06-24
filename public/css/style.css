@@ -26,13 +26,13 @@ footer {
     background-color: #ffffff;
     padding-top: 20px;
 }
-
+/*
 input {
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
 }
-
+*/
 input:focus {
     outline: none;
 }
@@ -248,6 +248,77 @@ h2.title-home {
 
 .register {
     padding: 60px 0 40px 0;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    max-width: 850px;
+}
+
+.register-title{
+    font-size: 14px;
+    margin: 10px 5px;
+    color: #444444;
+    font-weight: 500;
+}
+
+.register-intereses{
+    color: #444444;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.input-aline{
+    display: flex;
+    align-items: center;
+    margin: 3px;
+}
+
+.register-input {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    width: 100%;
+    margin: 0 5px 15px 5px;
+ 
+}
+
+input[type="date"] {
+    color: #666666;
+    appearance: none;
+    -webkit-appearance: none;
+    background:#ffffff;
+    padding:10px;
+    display: inline-block !important;
+    visibility: visible !important;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    width: 100%;
+    margin: 0 5px 15px 5px;
+}
+
+input[type="date"], focus {
+    color: #666666;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+.form-button-submit {
+    font-size: 14px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 5px 10px;
+    border-radius: 3px;
+    background-color: #03264C;
+    margin-bottom: 15px;
+}
+
+.form-button-submit:hover {
+    color: #666666;
+    background-color: #EAC926;
 }
 
 .footer-wrapper {
