@@ -46,9 +46,9 @@ li i {
     max-width: 1100px;
 }
 
-.sm-container {
+.container-form {
     margin: auto;
-    max-width: 960px;
+    width: 500px;
 }
 
 .logo {
@@ -247,18 +247,30 @@ h2.title-home {
 }
 
 .register {
-    padding: 60px 0 40px 0;
+    padding: 40px 0 40px 0;
+}
+
+.registrer-info-wrap{
     display: flex;
-    justify-content: center;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
-    max-width: 850px;
+	align-content: stretch;
+}
+
+.registrer-ratio-wrap{
+    display: flex;
+	justify-content: flex-start;
 }
 
 .register-title{
     font-size: 14px;
-    margin: 10px 5px;
+    margin: 20px 0 10px 0;
     color: #444444;
-    font-weight: 500;
+    font-weight: 500;    
+}
+.perfil-ratio {
+    color: #444444;
 }
 
 .register-intereses{
@@ -277,9 +289,9 @@ h2.title-home {
     border: none;
     border-radius: 5px;
     padding: 10px 10px;
-    width: 100%;
-    margin: 0 5px 15px 5px;
- 
+    margin: 0 0 15px 0;
+    width: 500px;
+    box-sizing: border-box;
 }
 
 input[type="date"] {
@@ -293,8 +305,9 @@ input[type="date"] {
     border: none;
     border-radius: 5px;
     padding: 10px 10px;
-    width: 100%;
     margin: 0 5px 15px 5px;
+    width: 500px;
+    box-sizing: border-box;
 }
 
 input[type="date"], focus {
@@ -304,20 +317,36 @@ input[type="date"], focus {
     -moz-box-shadow: none;
 }
 
-.form-button-submit {
-    font-size: 14px;
+.register-file-input {
+    color: #444444;
+    margin-left: -5px;
+  }
+.register-file-input::-webkit-file-upload-button {
+    font-size: 13px;
+    color: #1259c3;
+    border: solid 1px #1259c3;
+    cursor: pointer;
+    padding: 8px 20px;
+    margin: 5px 10px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+  }
+
+.register-button-submit {
+    font-size: 13px;
     color: #ffffff;
     border: none;
     cursor: pointer;
     padding: 10px 20px;
     margin: 5px 10px;
     border-radius: 3px;
-    background-color: #03264C;
+    background-color: #1259c3;
     margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
-.form-button-submit:hover {
-    color: #666666;
+.register-button-submit:hover {
+    color: #444444;
     background-color: #EAC926;
 }
 
@@ -378,6 +407,15 @@ input[type="date"], focus {
     .product-name {
         padding-bottom: 15px;
     }
+    .container-form {
+        width: 380px;
+    }
+    .register-input {
+        width: 380px;
+    }
+    input[type="date"] {
+        width: 380px;
+    }
     footer{
         padding: 20px 20px;
     }
@@ -416,10 +454,24 @@ input[type="date"], focus {
         width:100% !important;
         height: 420px;
     }
+    .container-form {
+        width: 250px!important;
+        padding: 20px;
+    }
+    .register-input {
+        width: 250px!important;
+    }
+    input[type="date"] {
+        width: 250px!important;
+    }
+    .register-intereses{
+        flex-direction: column;
+    }
+
     .footer-wrapper {
         display: flex;
         flex-direction: column;
-        align-content: center;
+        justify-content: flex-start;
     }
     .footer-widget {
         width: 100%;

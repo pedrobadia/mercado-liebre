@@ -40,39 +40,49 @@
             <div class="hero__burger-menu"><i class="fas fa-bars"></i></div>
     </header>
     <main>
-        <section class="register sm-container">
+        <section class="register container-form">
             <form action="/home.html" method="POST">
+                <div class="registrer-info-wrap">
                     <input type="text" name="full-name" placeholder="Nombre y apellido" class="register-input">
                     <input type="text" name="user-name" placeholder="Nombre de usuario" class="register-input">
                     <input type="email" name="email" placeholder="E-mail" class="register-input">
-               
-                
+                </div>
+
                 <p class="register-title">Fecha de nacimiento</p>
-                <input type="date" name="birth-date">
+
+                <div class="registrer-info-wrap">
+                    <input type="date" name="birth-date">
+                </div>
 
                 <p class="register-title">Perfil del usuario</p>
-                <label for="comprar"><input type="radio" name="profile" value="Comprar" id="comprar"> Comprar</label>
-                <label for="vender"><input type="radio" name="profile" value="Vender" id="vender"> Vender</label>
-                
-                <p class="register-title">Intereses</p>
-                <div class="register-intereses">
-                <label for="electro" class="input-aline"><input type="checkbox" name="cat-interest" value="Electro" id="electro"> Electro</label>
-                <label for="moda" class="input-aline"><input type="checkbox" name="cat-interest" value="Moda" id="moda"> Moda</label>
-                <label for="hogar" class="input-aline"><input type="checkbox" name="cat-interest" value="Hogar" id="hogar"> Hogar</label>
-                <label for="jugueteria" class="input-aline"><input type="checkbox" name="cat-interest" value="Juguetería" id="jugueteria"> Juguetería</label>               
-                <label for="vida-sana" class="input-aline"><input type="checkbox" name="cat-interest" value="Vida sana" id="vida-sana"> Vida sana</label>
+
+                <div class="registrer-ratio-wrap">
+                    <label for="comprar" class="perfil-ratio"><input type="radio" name="profile" value="Comprar" id="comprar"> Comprar</label>
+                    <label for="vender" class="perfil-ratio"><input type="radio" name="profile" value="Vender" id="vender"> Vender</label>
                 </div>
 
-                <input type="file">
+                <p class="register-title">Intereses</p>
 
-                <div>
-                    <p class="register-title">Contraseña</p>
+                <div class="register-intereses">
+                    <label for="electro" class="input-aline"><input type="checkbox" name="cat-interest" value="Electro" id="electro"> Electro</label>
+                    <label for="moda" class="input-aline"><input type="checkbox" name="cat-interest" value="Moda" id="moda"> Moda</label>
+                    <label for="hogar" class="input-aline"><input type="checkbox" name="cat-interest" value="Hogar" id="hogar"> Hogar</label>
+                    <label for="jugueteria" class="input-aline"><input type="checkbox" name="cat-interest" value="Juguetería" id="jugueteria"> Juguetería</label>               
+                    <label for="vida-sana" class="input-aline"><input type="checkbox" name="cat-interest" value="Vida sana" id="vida-sana"> Vida sana</label>
+                </div>
+
+                <input type="file" class="register-file-input">
+
+                <p class="register-title">Contraseña</p>
+
+                <div class="registrer-info-wrap"></div>
                     <input type="password" class="register-input" placeholder="Contraseña">
                     <input type="password" class="register-input" placeholder="Confirmar Contraseña">
-                </div>
+                </div>                    
+                
                 <div>
-                    <button type="reset" class="form-button-submit">Cancelar</button>
-                    <button type="submit" class="form-button-submit">Enviar</button>
+                    <button type="reset" class="register-button-submit">Borrar</button>
+                    <button type="submit" class="register-button-submit">Enviar</button>
                 </div>
             </form>
         </section>
